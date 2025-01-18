@@ -35,6 +35,8 @@
             this.panelSuperior = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.botonEditar = new System.Windows.Forms.Button();
+            this.botonEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.panelSuperior.SuspendLayout();
             this.SuspendLayout();
@@ -50,7 +52,7 @@
             // btnNuevoUsuario
             // 
             this.btnNuevoUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnNuevoUsuario.Location = new System.Drawing.Point(505, 248);
+            this.btnNuevoUsuario.Location = new System.Drawing.Point(505, 181);
             this.btnNuevoUsuario.Name = "btnNuevoUsuario";
             this.btnNuevoUsuario.Size = new System.Drawing.Size(117, 67);
             this.btnNuevoUsuario.TabIndex = 2;
@@ -64,10 +66,10 @@
             this.dgvUsuarios.AllowUserToDeleteRows = false;
             this.dgvUsuarios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuarios.Location = new System.Drawing.Point(156, 171);
+            this.dgvUsuarios.Location = new System.Drawing.Point(156, 181);
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUsuarios.Size = new System.Drawing.Size(314, 221);
+            this.dgvUsuarios.Size = new System.Drawing.Size(314, 247);
             this.dgvUsuarios.TabIndex = 3;
             // 
             // btnBuscarUsuarios
@@ -92,7 +94,6 @@
             this.panelSuperior.Name = "panelSuperior";
             this.panelSuperior.Size = new System.Drawing.Size(710, 56);
             this.panelSuperior.TabIndex = 0;
-            this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSuperior_Paint);
             // 
             // label1
             // 
@@ -103,7 +104,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(258, 29);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Gestion de Usuarios";
+            this.label1.Text = "Gestión de Usuarios";
             // 
             // panel1
             // 
@@ -113,12 +114,36 @@
             this.panel1.Size = new System.Drawing.Size(92, 77);
             this.panel1.TabIndex = 4;
             // 
+            // botonEditar
+            // 
+            this.botonEditar.BackColor = System.Drawing.Color.LightGray;
+            this.botonEditar.Location = new System.Drawing.Point(505, 272);
+            this.botonEditar.Name = "botonEditar";
+            this.botonEditar.Size = new System.Drawing.Size(117, 67);
+            this.botonEditar.TabIndex = 5;
+            this.botonEditar.Text = "Editar";
+            this.botonEditar.UseVisualStyleBackColor = false;
+            this.botonEditar.Click += new System.EventHandler(this.botonEditar_Click);
+            // 
+            // botonEliminar
+            // 
+            this.botonEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.botonEliminar.Location = new System.Drawing.Point(505, 361);
+            this.botonEliminar.Name = "botonEliminar";
+            this.botonEliminar.Size = new System.Drawing.Size(117, 67);
+            this.botonEliminar.TabIndex = 6;
+            this.botonEliminar.Text = "Eliminar";
+            this.botonEliminar.UseVisualStyleBackColor = false;
+            this.botonEliminar.Click += new System.EventHandler(this.botonEliminar_Click);
+            // 
             // CUUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::_01_Mi_Primera_Vez.Properties.Resources.fondo_2;
+            this.Controls.Add(this.botonEliminar);
+            this.Controls.Add(this.botonEditar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnBuscarUsuarios);
             this.Controls.Add(this.dgvUsuarios);
@@ -145,6 +170,8 @@
         private System.Windows.Forms.DataGridView dgvUsuarios;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button botonEditar;
+        private System.Windows.Forms.Button botonEliminar;
     }
 }
 

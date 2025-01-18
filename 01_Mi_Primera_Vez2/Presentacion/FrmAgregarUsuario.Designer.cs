@@ -40,7 +40,7 @@
             this.txtCelular = new System.Windows.Forms.TextBox();
             this.txtPais = new System.Windows.Forms.TextBox();
             this.txtCedula = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.botonGuardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -146,18 +146,18 @@
             this.txtCedula.Size = new System.Drawing.Size(245, 20);
             this.txtCedula.TabIndex = 11;
             // 
-            // button1
+            // botonGuardar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(247, 327);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 63);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.botonGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.botonGuardar.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonGuardar.ForeColor = System.Drawing.Color.Black;
+            this.botonGuardar.Location = new System.Drawing.Point(247, 327);
+            this.botonGuardar.Name = "botonGuardar";
+            this.botonGuardar.Size = new System.Drawing.Size(170, 63);
+            this.botonGuardar.TabIndex = 12;
+            this.botonGuardar.Text = "Guardar";
+            this.botonGuardar.UseVisualStyleBackColor = false;
+            this.botonGuardar.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmAgregarUsuario
             // 
@@ -165,7 +165,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::_01_Mi_Primera_Vez.Properties.Resources.fondo_3;
             this.ClientSize = new System.Drawing.Size(708, 411);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.botonGuardar);
             this.Controls.Add(this.txtCedula);
             this.Controls.Add(this.txtPais);
             this.Controls.Add(this.txtCelular);
@@ -200,6 +200,6 @@
         private System.Windows.Forms.TextBox txtCelular;
         private System.Windows.Forms.TextBox txtPais;
         private System.Windows.Forms.TextBox txtCedula;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button botonGuardar;
     }
 }
